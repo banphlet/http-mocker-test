@@ -1,0 +1,17 @@
+{
+    "name": "kudobuzzhq/php",
+    "description": "Test mocker",
+    "type": "project",
+    "authors": [
+        {
+            "name": "banphlet",
+            "email": "banphlet4@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^3.3"
+    },
+    "require-dev": {
+        "codeception/codeception": "^3.0"
+    }
+}

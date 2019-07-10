@@ -1,0 +1,14 @@
+paths:
+    tests: tests
+    output: tests/_output
+    data: tests/_data
+    support: tests/_support
+    envs: tests/_envs
+actor_suffix: Tester
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+        - Codeception\Extension\RunProcess:
+            0: java -Dwebdriver.chrome.driver=chromedriver -jar selenium-server-standalone-3.9.1.jar -browserSideLog -debug -timeout 60
+            1: php -S localhost:2000
+    
